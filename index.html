@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiceDesign — скины, превью, аватарки для Minecraft</title>
+    <style>
+        :root {
+            --primary-blue: #4A90E2;
+            --dark-black: #121212;
+            --text-gray: #CCCCCC;
+            --accent-yellow: #FFD700; /* акцент для срочности */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: var(--dark-black);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 3px solid var(--primary-blue);
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .btn-order {
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-order:hover {
+            background-color: #357ABD;
+            transform: translateY(-2px);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .work-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 4/3;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        .work-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .work-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .speed-section {
+            background: #1E1E1E;
+            padding: 3rem 1rem;
+            border-left: 5px solid var(--primary-blue);
+            text-align: center;
+        }
+
+        .speed-section h2 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .speed-section p {
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .speed-list {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .speed-item {
+            text-align: left;
+        }
+
+        .speed-item strong {
+            color: var(--primary-blue);
+        }
+
+        .slogan-footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(180deg, #121212 0%, #000000 100%);
+            border-top: 3px solid var(--primary-blue);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NiceDesign</h1>
+        <p class="subtitle">Скины, превью и аватарки для Minecraft</p>
+    </header>
+
+    <main>
+        <section class="cta-section">
+            <h2 style="margin-bottom: 1rem;">Хочешь крутой дизайн?</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-gray);">
+                Мы делаем скины, превью и аватарки в фирменном стиле NiceDesign.
+            </p>
+            <a href="https://t.me/error_c_r_a_s_h" class="btn-order" target="_blank" rel="noopener noreferrer">Заказать</a>
+        </section>
+
+        <section>
+            <h2 style="text-align:center; margin-bottom:2rem;">Наши работы</h2>
+            <div class="gallery-grid">
+                <div class="work-item"><img src="assets/image1.jpg" alt="Работа 1"></div>
+                <div class="work-item"><img src="assets/image2.jpg" alt="Работа 2"></div>
+                <div class="work-item"><img src="assets/image3.jpg" alt="Работа 3"></div>
+                <div class="work-item"><img src="assets/image4.jpg" alt="Работа 4"></div>
+                <div class="work-item"><img src="assets/image5.jpg" alt="Работа 5"></div>
+                <div class="work-item"><img src="assets/image6.jpg" alt="Работа 6"></div>
+                <div class="work-item"><img src="assets/image7.jpg" alt="Работа 7"></div>
+                <div class="work-item"><img src="assets/image8.jpg" alt="Работа 8"></div>
+            </div>
+        </section>
+
+        <!-- Блок про скорость и сроки -->
+        <section class="speed-section">
+            <h2>Работаем быстро — сдаём в срок!</h2>
+            <p>
+                В NiceDesign мы знаем, как важно получить результат вовремя. Будь то срочный превью-кадр для ролика, новый скин к стриму или аватарка для турнира — мы укладываемся в дедлайн без потери качества.
+            </p>
+
+        </section>
+    </main>
+
+    <!-- Мини-слоган -->
+    <div class="slogan-footer">
+        ЗАКАЗЫВАЙТЕ У НАС!
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NiceDesign. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
