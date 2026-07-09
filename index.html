@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NiceDesign</title>
-    <!-- Фавикон: браузер покажет эту картинку рядом с названием вкладки -->
     <link rel="icon" href="assets/favicon.png" type="image/png">
 
     <style>
@@ -15,127 +14,61 @@
             --accent-yellow: #FFD700;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: 'Segoe UI', Roboto, Arial, sans-serif;
             background-color: var(--dark-black);
             color: #ffffff;
             line-height: 1.6;
         }
-
         header {
             padding: 3rem 1rem;
             text-align: center;
             border-bottom: 3px solid var(--primary-blue);
         }
-
-        h1 {
-            color: var(--primary-blue);
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .subtitle {
-            color: var(--text-gray);
-            font-size: 1.1rem;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 3rem auto;
-            padding: 0 1rem;
-        }
-
-        .cta-section {
-            text-align: center;
-            margin: 4rem 0;
-        }
-
+        h1 { color: var(--primary-blue); font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .subtitle { color: var(--text-gray); font-size: 1.1rem; }
+        main { max-width: 1200px; margin: 3rem auto; padding: 0 1rem; }
+        .cta-section { text-align: center; margin: 4rem 0; }
         .btn-order {
             display: inline-block;
-            background-color: var(--primary-blue);
-            color: white;
-            padding: 1rem 2rem;
-            font-size: 1.2rem;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
+            background-color: var(--primary-blue); color: white;
+            padding: 1rem 2rem; font-size: 1.2rem; text-decoration: none;
+            border-radius: 6px; font-weight: 600;
             transition: background 0.3s ease, transform 0.2s ease;
         }
-
-        .btn-order:hover {
-            background-color: #357ABD;
-            transform: translateY(-2px);
-        }
-
+        .btn-order:hover { background-color: #357ABD; transform: translateY(-2px); }
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
             gap: 1.5rem;
             margin-bottom: 4rem;
         }
-
         .work-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            aspect-ratio: 4/3;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            position: relative; overflow: hidden; border-radius: 8px;
+            aspect-ratio: 4/3; box-shadow: 0 4px 12px rgba(0,0,0,0.4);
         }
-
         .work-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.4s ease;
+            width: 100%; height: 100%; object-fit: cover;
+            display: block; transition: transform 0.4s ease;
         }
-
-        .work-item:hover img {
-            transform: scale(1.05);
-        }
-
+        .work-item:hover img { transform: scale(1.05); }
         .speed-section {
-            background: #1E1E1E;
-            padding: 3rem 1rem;
-            border-left: 5px solid var(--primary-blue);
-            text-align: center;
+            background: #1E1E1E; padding: 3rem 1rem;
+            border-left: 5px solid var(--primary-blue); text-align: center;
         }
-
-        .speed-section h2 {
-            color: var(--primary-blue);
-            margin-bottom: 1rem;
-        }
-
-        .speed-section p {
-            color: var(--text-gray);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
+        .speed-section h2 { color: var(--primary-blue); margin-bottom: 1rem; }
+        .speed-section p { color: var(--text-gray); max-width: 700px; margin: 0 auto; }
         .slogan-footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            color: white;
-            font-size: 1.4rem;
-            font-weight: bold;
-            text-transform: uppercase;
+            text-align: center; padding: 2rem 1rem; color: white;
+            font-size: 1.4rem; font-weight: bold; text-transform: uppercase;
             letter-spacing: 2px;
             background: linear-gradient(180deg, #121212 0%, #000000 100%);
             border-top: 3px solid var(--primary-blue);
         }
-
         footer {
-            text-align: center;
-            padding: 1.5rem 1rem;
-            color: var(--text-gray);
-            font-size: 0.9rem;
-            border-top: 1px solid #222;
+            text-align: center; padding: 1.5rem 1rem;
+            color: var(--text-gray); font-size: 0.9rem; border-top: 1px solid #222;
         }
     </style>
 </head>
@@ -169,7 +102,6 @@
             </div>
         </section>
 
-        <!-- Блок про скорость и сроки -->
         <section class="speed-section">
             <h2>Работаем быстро — сдаём в срок!</h2>
             <p>
@@ -178,28 +110,27 @@
         </section>
     </main>
 
-    <!-- Мини-слоган -->
-    <div class="slogan-footer">
-        ЗАКАЗЫВАЙТЕ У НАС!
-    </div>
+    <div class="slogan-footer">ЗАКАЗЫВАЙТЕ У НАС!</div>
 
     <footer>
         <p>&copy; 2024 NiceDesign. Все права защищены.</p>
     </footer>
 
-    <!-- Игровой слой (скрыт по умолчанию) -->
+    <!-- Игровой оверлей -->
     <div id="game-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); z-index: 9999; justify-content: center; align-items: center; flex-direction: column;">
         <div id="game-container" style="position: relative; width: 400px; height: 400px; background: #121212; border: 4px solid var(--primary-blue); border-radius: 12px; overflow: hidden;">
             <div id="score-display" style="position: absolute; top: 15px; left: 15px; color: var(--accent-yellow); font-weight: bold; font-size: 1.2rem;">Счёт: 0</div>
             <div id="timer-display" style="position: absolute; top: 15px; right: 15px; color: var(--text-gray); font-weight: bold;">Время: 30</div>
+
             <div id="start-screen" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
                 <h2 style="color: var(--primary-blue); margin-bottom: 10px;">Мини‑игра</h2>
-                <p style="color: var(--text-gray); margin-bottom: 20px;">Нажимай на цели, пока не истечёт время</p>
+                <p style="color: var(--text-gray); margin-bottom: 20px;">Кликай по целям, пока не истечёт время</p>
                 <button id="start-game-btn" style="background: var(--primary-blue); color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">Начать игру</button>
             </div>
+
             <div id="end-screen" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
                 <h2 style="color: var(--accent-yellow); margin-bottom: 10px;">Игра окончена!</h2>
-                <p id="final-score" style="color: var(--text-gray); margin-bottom: 20px; font-size: 1.1rem;"></p>
+                <p id="final-score" style="color: var(--text-gray); margin-bottom: 20px;"></p>
                 <button id="restart-game-btn" style="background: var(--primary-blue); color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">Ещё раз</button>
                 <button id="close-game-btn" style="background: transparent; color: var(--text-gray); border: 1px solid var(--text-gray); padding: 10px 20px; border-radius: 6px; cursor: pointer; margin-top: 10px;">Закрыть</button>
             </div>
@@ -207,7 +138,6 @@
         <button id="close-game-btn-top" style="margin-top: 20px; background: transparent; color: var(--text-gray); border: 1px solid var(--text-gray); padding: 10px 20px; border-radius: 6px; cursor: pointer;">Закрыть игру</button>
     </div>
 
-    <!-- Логика мини-игры -->
     <script>
         (function() {
             const overlay = document.getElementById('game-overlay');
@@ -224,13 +154,23 @@
             const gameContainer = document.getElementById('game-container');
             const startScreen = document.getElementById('start-screen');
 
+            // ---------------------------------------------------------
+            // ВАЖНО: сюда напиши названия своих картинок-целей
+            // Все они должны лежать в папке assets
+            // ---------------------------------------------------------
+            const targetImages = [
+                'assets/target1.png',
+                'assets/target2.png',
+                'assets/target3.png'
+                // добавь столько, сколько у тебя есть картинок
+            ];
+
             let score = 0;
             let timeLeft = 30;
             let timerInterval;
             let targetInterval;
             let isGameActive = false;
 
-            // Показываем оверлей по Ctrl+G
             document.addEventListener('keydown', (e) => {
                 if (e.ctrlKey && e.key.toLowerCase() === 'g') {
                     e.preventDefault();
@@ -238,7 +178,6 @@
                 }
             });
 
-            // Закрываем оверлей
             closeBtns.forEach(btn => {
                 if (btn) {
                     btn.addEventListener('click', () => {
@@ -259,7 +198,6 @@
                 clearInterval(timerInterval);
                 clearInterval(targetInterval);
 
-                // Удаляем все старые цели
                 const targets = gameContainer.querySelectorAll('.game-target');
                 targets.forEach(t => t.remove());
             }
@@ -273,33 +211,35 @@
                 endScreen.style.display = 'none';
                 isGameActive = true;
 
-                // Таймер
                 timerInterval = setInterval(() => {
                     timeLeft--;
                     timerEl.textContent = 'Время: ' + timeLeft;
-                    if (timeLeft <= 0) {
-                        endGame();
-                    }
+                    if (timeLeft <= 0) endGame();
                 }, 1000);
 
-                // Генерация целей
                 targetInterval = setInterval(spawnTarget, 800);
             }
 
             function spawnTarget() {
                 if (!isGameActive) return;
 
+                // Выбираем случайную картинку из списка
+                const randomImg = targetImages[Math.floor(Math.random() * targetImages.length)];
+
                 const target = document.createElement('div');
                 target.className = 'game-target';
                 target.style.position = 'absolute';
                 target.style.width = '50px';
                 target.style.height = '50px';
-                target.style.background = 'var(--primary-blue)';
-                target.style.borderRadius = '50%';
                 target.style.cursor = 'pointer';
                 target.style.boxShadow = '0 0 8px rgba(74, 144, 226, 0.6)';
 
-                // Случайные координаты (с учётом границ контейнера)
+                // Картинка как фон
+                target.style.backgroundImage = `url('${randomImg}')`;
+                target.style.backgroundSize = 'contain';
+                target.style.backgroundRepeat = 'no-repeat';
+                target.style.backgroundPosition = 'center';
+
                 const maxX = gameContainer.clientWidth - 50;
                 const maxY = gameContainer.clientHeight - 50;
                 target.style.left = Math.floor(Math.random() * maxX) + 'px';
@@ -308,7 +248,7 @@
                 target.addEventListener('click', () => {
                     score++;
                     scoreEl.textContent = 'Счёт: ' + score;
-                    target.remove(); // цель исчезает после клика
+                    target.remove();
                 });
 
                 gameContainer.appendChild(target);
@@ -322,13 +262,8 @@
                 endScreen.style.display = 'block';
             }
 
-            // Обработчики кнопок
-            if (startBtn) {
-                startBtn.addEventListener('click', startGame);
-            }
-            if (restartBtn) {
-                restartBtn.addEventListener('click', startGame);
-            }
+            if (startBtn) startBtn.addEventListener('click', startGame);
+            if (restartBtn) restartBtn.addEventListener('click', startGame);
         })();
     </script>
 </body>
